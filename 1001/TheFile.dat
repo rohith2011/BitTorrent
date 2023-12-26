@@ -1,0 +1,16 @@
+/**
+ * This method takes in an array of integers and returns the sum of all even numbers in the array.
+ * If the array is empty or contains no even numbers, the method returns 0.
+ *
+ * @param arr the array of integers to sum even numbers from
+ * @return the sum of all even numbers in the array, or 0 if the array is empty or contains no even numbers
+ */
+public static int sumEvenNumbers(int[] arr) {
+  int sum = 0;
+  for (int num : arr) {
+    if (num % 2 == 0) {
+      sum += num;
+    }
+  }
+  return sum;
+}
